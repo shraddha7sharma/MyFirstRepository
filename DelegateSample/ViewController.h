@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SecondViewController.h"
 
-@interface ViewController : UIViewController
+
+@interface ViewController : UIViewController<SecondViewControllerProtocol>
+@property (strong, nonatomic) IBOutlet UILabel *lblHello;
+- (IBAction)Next_Pressed:(id)sender;
 
 
 @end
